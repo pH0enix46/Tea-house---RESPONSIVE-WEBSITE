@@ -28,16 +28,19 @@
     ></script>
     <!-- ⛔️⛔️⛔️ -->
 
-    <!-- CSS✅✅✅ -->
-    <style>
-      body {
-        font-family: "Rubik";
-        font-weight: 400;
-        color: #444;
-      }
-    </style>
+    <!-- TAILWIND-CSS✅✅✅ -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              rubik: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
     <!-- ⛔️⛔️⛔️ -->
 
     <title>Tea-House</title>
@@ -47,7 +50,7 @@
   <!-- written by (MD Joy)🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 🧡💛💚 -->
   <!--                -->
 
-  <body>
+  <body class="font-rubik text-[#444]">
     <main class="max-w-screen-xl mx-auto px-8 lg:px-12">
       <!-- HERO✅✅✅ -->
       <section
@@ -79,7 +82,7 @@
           </div>
 
           <div
-            class="flex items-center bg-white shadow-lg px-2 py-2 rounded-lg absolute lg:left-[20%] lg:top-[70%] top-[80%] left-[30%] md:top-[70%] md:left-[10%]"
+            class="flex items-center bg-white shadow-lg px-2 py-2 rounded-lg absolute lg:left-[30%] lg:top-[78%] top-[80%] left-[30%] md:top-[70%] md:left-[10%]"
           >
             <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
             <div class="ml-2 flex flex-col">
@@ -211,7 +214,7 @@
       <!-- ⛔️⛔️⛔️ -->
 
       <!-- REVIEWS SECTION✅✅✅ -->
-      <section class="mb-24">
+      <section class="mb-28">
         <div
           class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid items-center grid-cols-1 lg:grid-cols-2 text-white px-6 py-10 md:px-12 gap-20 lg:gap-0"
         >
@@ -225,7 +228,7 @@
               slightly believable
             </p>
             <button
-              class="bg-white text-orange-700 px-3 py-2 rounded-lg shadow-xl hover:bg-gray-200 transition-all duration-200"
+              class="bg-white text-orange-700 px-3 py-2 rounded-lg shadow-lg hover:bg-gray-200 transition-all duration-200"
             >
               <span
                 class="bg-gradient-to-r from-orange-400 via-orange-600 to-blue-300 bg-clip-text text-transparent font-bold"
@@ -313,6 +316,187 @@
         </div>
       </section>
       <!-- ⛔️⛔️⛔️ -->
+
+      <!-- NEWS & EVENTS✅✅✅ -->
+      <section class="mb-24">
+        <div class="text-center mb-16">
+          <h4 class="text-4xl font-bold mb-4">News & Events</h4>
+          <p class="text-gray-600 md:w-11/12 mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center px-6"
+        >
+          <div class="flex flex-col gap-1 border-2 rounded-xl p-4">
+            <img src="images/news-1.png" alt="news" class="mb-4" />
+            <span class="text-gray-400">Feb 05, 2027</span>
+            <span class="font-bold text-base">
+              Collecting 8 points for discount
+            </span>
+            <span class="text-gray-600">
+              There are many variations of passages of Lorem Ipsum available
+            </span>
+            <a href="#" class="font-bold">Learn More</a>
+          </div>
+
+          <div class="flex flex-col gap-1 border-2 rounded-xl p-4">
+            <img src="images/news-2.png" alt="news" class="mb-4" />
+            <span class="text-gray-400">Feb 05, 2027</span>
+            <span class="font-bold text-base">
+              Collecting 8 points for discount
+            </span>
+            <span class="text-gray-600">
+              There are many variations of passages of Lorem Ipsum available
+            </span>
+            <a href="#" class="font-bold">Learn More</a>
+          </div>
+
+          <div class="flex flex-col gap-1 border-2 rounded-xl p-4">
+            <img src="images/news-3.png" alt="news" class="mb-4" />
+            <span class="text-gray-400">Feb 05, 2027</span>
+            <span class="font-bold text-base">
+              Collecting 8 points for discount
+            </span>
+            <span class="text-gray-600">
+              There are many variations of passages of Lorem Ipsum available
+            </span>
+            <a href="#" class="font-bold">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <!-- ⛔️⛔️⛔️ -->
     </main>
+
+    <!-- FOOTER✅✅✅ -->
+    <footer class="bg-orange-100">
+      <div class="max-w-screen-xl mx-auto px-12 lg:px-24 pt-12 pb-8">
+        <!-- Logo -->
+        <div class="flex justify-between items-center mb-16">
+          <img src="images/cup.png" alt="logo" class="h-full" />
+          <div class="flex items-center gap-6">
+            <span class="font-semibold lg:text-lg">Ready to get strated?</span>
+            <button
+              class="py-2 rounded-lg font-bold text-white px-3 flex hover:bg-gradient-to-l shadow-lg bg-gradient-to-r from-orange-500 to-red-500 transition-all duration-300"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-y-10 lg:gap-4"
+        >
+          <!-- First -->
+          <div>
+            <ul class="flex flex-col gap-1.5">
+              <li class="font-semibold text-lg">Quick Links</li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Insurance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Second -->
+          <div>
+            <ul class="flex flex-col gap-1.5">
+              <li class="font-semibold text-lg">Our Service</li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Life Insurance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Car Insurance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Health Insurance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  House Insurance
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third -->
+          <div>
+            <ul class="flex flex-col gap-1.5">
+              <li class="font-semibold text-lg">Help</li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-orange-600 transition-all">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Four -->
+          <div>
+            <h3 class="font-semibold text-lg mb-6">
+              Subscribe to our newsletter
+            </h3>
+            <div class="flex flex-col gap-1">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Email Adress"
+                  class="bg-transparent border-b-2 border-gray-500 w-4/6 pb-2 focus:outline-none"
+                />
+                <i
+                  class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex items-center justify-center rounded-full text-white cursor-pointer shadow-2xl"
+                ></i>
+              </div>
+
+              <div class="flex gap-3 w-2/5 items-center mt-8">
+                <i class="fa-brands fa-facebook text-2xl cursor-pointer"></i>
+                <i class="fa-brands fa-twitter text-2xl cursor-pointer"></i>
+                <i class="fa-brands fa-youtube text-2xl cursor-pointer"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-14">
+          <p class="text-lg text-gray-600">
+            © 2027 UIDesign.to - All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ⛔️⛔️⛔️ -->
   </body>
 </html>
